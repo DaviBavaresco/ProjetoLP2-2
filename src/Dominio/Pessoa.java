@@ -56,10 +56,18 @@ public class Pessoa {
 
 
 
+<<<<<<< HEAD
     public void AdicionaLanche(Lanche lan){
         this.lanches.add(lan);
     };
     public void AdicionaLancheFavorito(Lanche lan){
+=======
+    public void adicionaLanche(Lanche lan){
+        this.lanches.add(lan);
+    };
+    public void adicionaCardapio(Cardapio car){this.cardapios.add(car);}
+    public void addLanchesFavoritos(Lanche lan){
+>>>>>>> 503fe3d (Initial commit)
         this.lanchesFavoritos.add(lan);
     }
     //public

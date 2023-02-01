@@ -17,8 +17,13 @@ public class Lanche {
     }
 
 
+<<<<<<< HEAD
     public void AdicionarIngrediente(Ingrediente ingre){
     this.ingredientes.add(ingre);
+=======
+    public void adicionaIngrediente(Ingrediente i){
+    this.ingredientes.add(i);
+>>>>>>> 503fe3d (Initial commit)
     }
 
     public List<Ingrediente> getIngredientes(){
