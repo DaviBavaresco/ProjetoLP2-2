@@ -1,5 +1,3 @@
-package Dominio;
-
 import java.util.ArrayList;
 
 public class Pessoa {
@@ -8,8 +6,6 @@ public class Pessoa {
     private double altura;
     private int idade;
     private ArrayList<Lanche> lanches= new ArrayList<Lanche>();
-    private ArrayList<Cardapio> cardapios= new ArrayList<Cardapio>();
-    private ArrayList<Lanche> lanchesFavoritos= new ArrayList<Lanche>();
 
     public Pessoa(String nome, double peso, double altura, int idade) {
         this.nome = nome;
@@ -18,7 +14,9 @@ public class Pessoa {
         this.idade = idade;
     }
 
-
+    public void AdicionaLanche(Lanche lan){
+        this.lanches.add(lan);
+    };
 
 
     public double getPeso() {
@@ -53,20 +51,9 @@ public class Pessoa {
         this.idade = idade;
     }
 
-
-
-
-    public void AdicionaLanche(Lanche lan){
-        this.lanches.add(lan);
-    };
-    public void AdicionaLancheFavorito(Lanche lan){
-        this.lanchesFavoritos.add(lan);
-    }
-    //public
-
     @Override
     public String toString() {
-        return "Dominio.Pessoa{" +
+        return "Pessoa{" +
                 "nome='" + nome + '\'' +
                 ", peso=" + peso +
                 ", altura=" + altura +

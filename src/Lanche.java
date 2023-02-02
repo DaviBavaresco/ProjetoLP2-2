@@ -1,11 +1,9 @@
-package Dominio;
-
 import java.util.ArrayList;
 import java.util.List;
 
 public class Lanche {
     private String nome;
-
+    private boolean favorito=true;
 
     private int total=0;
     private ArrayList<Ingrediente> ingredientes = new ArrayList<Ingrediente>();
@@ -40,13 +38,19 @@ public class Lanche {
         return val;
     }
 
+    public boolean isFavorito() {
+        return favorito;
+    }
 
+    public void setFavorito(boolean favorito) {
+        this.favorito = favorito;
+    }
 
     @Override
     public String toString() {
-        return "Dominio.Lanche{" +
+        return "Lanche{" +
                 "nome='" + nome + '\'' +
-
+                ", favorito=" + favorito +
                 ", carb=" + getTotalCarb() +
                 ", prot=" + getTotalProt()+
                 ", ingredientes=" + ingredientes +

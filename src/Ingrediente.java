@@ -1,5 +1,3 @@
-package Dominio;
-
 public class Ingrediente {
     private int quantidade;
     private Condimento condimento;
@@ -19,7 +17,7 @@ public class Ingrediente {
 
     @Override
     public String toString() {
-        return "Dominio.Ingrediente{" +
+        return "Ingrediente{" +
                 "quantidade=" + quantidade +
                 ", condimento=" + condimento +
                 '}';

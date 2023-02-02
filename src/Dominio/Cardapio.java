@@ -7,12 +7,6 @@ public class Cardapio {
     private String nome;
     private ArrayList<Lanche> lanches = new ArrayList<Lanche>();
 
-<<<<<<< HEAD
-=======
-    public Cardapio(String nome){
-        this.nome=nome;
-    }
->>>>>>> 503fe3d (Initial commit)
 
     public List<Lanche> getLanches(){
         return lanches;
@@ -39,11 +33,7 @@ public class Cardapio {
     }
 
 
-<<<<<<< HEAD
     public void AdicionaLanche(Lanche lan){
-=======
-    public void adicionaLanche(Lanche lan){
->>>>>>> 503fe3d (Initial commit)
         this.lanches.add(lan);
     }
 
