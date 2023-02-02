@@ -141,5 +141,16 @@ public class Banco {
         cardapios.add(cc);
 
     };
+    public static void criaPessoa() {
+        Pessoa p;
+        p= new Pessoa("Davi",1.74,75,19);
+
+        p.adicionaLanche(lanches.get(0));
+        p.adicionaLanche(lanches.get(4));
+        p.adicionaCardapio(cardapios.get(1));
+        p.addLanchesFavoritos(lanches.get(1));
+        pessoas.add(p);
+
+    };
 
 }

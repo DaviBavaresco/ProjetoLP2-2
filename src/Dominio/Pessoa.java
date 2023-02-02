@@ -56,13 +56,13 @@ public class Pessoa {
 
 
 
-    public void AdicionaLanche(Lanche lan){
+    public void adicionaLanche(Lanche lan){
         this.lanches.add(lan);
     };
-    public void AdicionaLancheFavorito(Lanche lan){
+    public void addLanchesFavoritos(Lanche lan){
         this.lanchesFavoritos.add(lan);
     }
-    //public
+    public void adicionaCardapio(Cardapio car){this.cardapios.add(car);}
 
     @Override
     public String toString() {
