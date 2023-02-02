@@ -5,11 +5,7 @@ public class Ingrediente {
     private Condimento condimento;
     private int total=0;
 
-<<<<<<< HEAD
-    public Ingrediente(int quantidade, Condimento condimento) {
-=======
-    public Ingrediente( Condimento condimento,int quantidade ) {
->>>>>>> 503fe3d (Initial commit)
+    public Ingrediente(Condimento condimento,int quantidade ) {
         this.quantidade = quantidade;
         this.condimento = condimento;
     }

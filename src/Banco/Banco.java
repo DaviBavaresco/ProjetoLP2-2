@@ -15,23 +15,6 @@ public class Banco {
     public static List<Lanche> lanches= new ArrayList<Lanche>();
     public static List<Pessoa> pessoas= new ArrayList<Pessoa>();
 
-<<<<<<< HEAD
-    public void CriaCondimento(){
-        Condimento c;
-        c=new Condimento("Batata",12,2);
-        condimentos.add(c);
-        c=new Condimento("Arroz",10,2);
-        condimentos.add(c);
-        c=new Condimento("Massa",15,5);
-        condimentos.add(c);
-        c=new Condimento("Carne",3,10);
-        condimentos.add(c);
-        c=new Condimento("Frango",2,20);
-        condimentos.add(c);
-        c=new Condimento("Camarão",1,12);
-        condimentos.add(c);
-    }
-=======
     public static void criaCondimento() {
         Condimento c;
         c=new Condimento("Arroz",2,7);
@@ -158,16 +141,5 @@ public class Banco {
         cardapios.add(cc);
 
     };
-    public static void criaPessoa() {
-        Pessoa p;
-        p= new Pessoa("Davi",1.74,75,19);
-        p.adicionaLanche(lanches.get(0));
-        p.adicionaLanche(lanches.get(4));
-        p.adicionaCardapio(cardapios.get(1));
-        p.addLanchesFavoritos(lanches.get(1));
-        pessoas.add(p);
-
-    };
->>>>>>> 503fe3d (Initial commit)
 
 }
